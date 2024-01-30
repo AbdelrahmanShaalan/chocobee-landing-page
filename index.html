@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHOCOBEE landing page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="output.css">
+
+    <script src="js/mobileNav.js" defer></script>
+    <script src="js/accordion.js" defer></script>
+
+    <!-- npx tailwindcss -i ./input.css -o ./output.css --watch -->
+</head>
+<body class="min-h-screen bg-lightGray flex flex-col box-border font-Cairo">
+    <header class="flex justify-center">
+        <div class="container relative p-5 md:px-14 pt-2 flex justify-between">
+            <h1 class="font-Amiri inline-block text-chocolate">CHOCO<span class="text-yellow">B</span>EE</h1>
+            <button id="openIcon" aria-label="open mobile nav button" class="md:hidden"><i class="bi bi-list text-xl"></i></button>
+            <ul id="menu" class="absolute right-10 top-12 bg-white p-5 rounded-md shadow-xl flex-col gap-3">
+                <button id="closeIcon" class="self-start"><i class="bi bi-x-lg"></i></button>
+                <li class="py-2"><a href="#ourExperience" class="hover:text-chocolate relative after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-1 after:bg-chocolate after:transition-[width] after:duration-500 hover:after:w-full"><i class="bi bi-stars"></i> Our experience</a></li>
+                <li class="py-2"><a href="#ourCustomers" class="hover:text-chocolate relative after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-1 after:bg-chocolate after:transition-[width] after:duration-500 hover:after:w-full"><i class="bi bi-people-fill"></i> Our customers</a></li>
+                <li class="py-2"><a href="#FAQs" class="hover:text-chocolate relative after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-1 after:bg-chocolate after:transition-[width] after:duration-500 hover:after:w-full"><i class="bi bi-question-circle-fill"></i> FAQs</a></li>
+                <li class="py-2"><a href="#gallery" class="hover:text-chocolate relative after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-1 after:bg-chocolate after:transition-[width] after:duration-500 hover:after:w-full"><i class="bi bi-images"></i> Gallery</a></li>
+                <li class="py-2"><a href="#contactUs" class="hover:text-chocolate relative after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-1 after:bg-chocolate after:transition-[width] after:duration-500 hover:after:w-full"><i class="bi bi-telephone-fill"></i> Contact us</a></li>
+            </ul>
+        </div>
+    </header>
+    <nav class="hidden md:flex justify-center font-Cairo font-bold border-b border-b-lightGray">
+        <div class="container p-5 md:px-14 md:py-1">
+            <ul class="flex justify-between">
+                <li class="py-2"><a href="#ourExperience" class="hover:text-chocolate relative after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-1 after:bg-chocolate after:transition-[width] after:duration-500 hover:after:w-full"><i class="bi bi-stars"></i> Our experience</a></li>
+                <li class="py-2"><a href="#ourCustomers" class="hover:text-chocolate relative after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-1 after:bg-chocolate after:transition-[width] after:duration-500 hover:after:w-full"><i class="bi bi-people-fill"></i> Our customers</a></li>
+                <li class="py-2"><a href="#FAQs" class="hover:text-chocolate relative after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-1 after:bg-chocolate after:transition-[width] after:duration-500 hover:after:w-full"><i class="bi bi-question-circle-fill"></i> FAQs</a></li>
+                <li class="py-2"><a href="#gallery" class="hover:text-chocolate relative after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-1 after:bg-chocolate after:transition-[width] after:duration-500 hover:after:w-full"><i class="bi bi-images"></i> Gallery</a></li>
+                <li class="py-2"><a href="#contactUs" class="hover:text-chocolate relative after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-1 after:bg-chocolate after:transition-[width] after:duration-500 hover:after:w-full"><i class="bi bi-telephone-fill"></i> Contact us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="flex flex-col justify-center items-center flex-grow gap-16">
+        <section class="container mt-16 p-5 md:px-14 md:py-1 flex-grow flex flex-col md:flex-row gap-5">
+            <div class="flex-grow flex-1 flex items-center">
+                <div class="flex flex-col items-center md:block">
+                    <h1 class="font-Amiri text-5xl text-center md:text-start mb-2">Lorem ipsum dolor sit <span class="text-chocolate">amet?</span></h1>
+                    <p class="max-w-96 text-gray font-Cairo text-center md:text-start mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rerum saepe est eveniet dolorum magni labore doloremque eligendi nesciunt, id cumque pariatur cum quibusdam velit.</p>
+                    <ul class="flex justify-evenly md:justify-start gap-5 text-2xl">
+                        <li><i class="bi bi-facebook hover:text-chocolate"></i></li>
+                        <li><i class="bi bi-instagram hover:text-chocolate"></i></li>
+                        <li><i class="bi bi-whatsapp hover:text-chocolate"></i></li>
+                        <li><i class="bi bi-twitter-x hover:text-chocolate"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-grow flex-1 flex justify-center md:justify-end items-center">
+                <div class="image-box w-80">
+                    <img class="rounded-lg" src="images/chocolate_1.jpg" alt="chocolate 1">
+                </div>
+            </div>
+        </section>
+        <section id="ourExperience" class="container p-5 md:px-14 md:py-1 flex flex-col items-center gap-5">
+            <h2 class="font-Amiri px-2 self-center inline-block text-4xl text-center hover:text-chocolate hover:border-x-2 hover:border-x-chocolate"><i class="bi bi-stars"></i> Our experience</h2>
+            <div class="grid-box grid gap-10 grid-cols-1 grid-rows-3 md:grid-cols-3 md:grid-rows-1 py-10 px-5">
+                <div class="flex flex-col gap-3 items-center">
+                    <div class="image w-20 h-20 bg-gradient-to-tr from-chocolate to-[#c76a0d] flex justify-center items-center rounded-md">
+                        <i class="bi bi-speedometer text-white text-6xl"></i>
+                    </div>
+                    <div class="text">
+                        <h3 class="text-center font-Cairo">Lorem.</h3>
+                        <p class="text-center font-cairo text-gray">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, magnam.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-3 items-center">
+                    <div class="image w-20 h-20 bg-gradient-to-tr from-chocolate to-[#c76a0d] flex justify-center items-center rounded-md">
+                        <i class="bi bi-building text-white text-6xl"></i>
+                    </div>
+                    <div class="text">
+                        <h3 class="text-center font-Cairo">Lorem.</h3>
+                        <p class="text-center font-cairo text-gray">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, magnam.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-3 items-center">
+                    <div class="image w-20 h-20 bg-gradient-to-tr from-chocolate to-[#c76a0d] flex justify-center items-center rounded-md">
+                        <i class="bi bi-chat-square-heart-fill text-white text-6xl"></i>
+                    </div>
+                    <div class="text">
+                        <h3 class="text-center font-Cairo">Lorem.</h3>
+                        <p class="text-center font-cairo text-gray">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, magnam.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="ourCustomers" class="container p-5 md:px-14 md:py-1 flex flex-col items-center gap-5">
+            <h2 class="font-Amiri px-2 self-center inline-block text-4xl text-center hover:text-chocolate hover:border-x-2 hover:border-x-chocolate"><i class="bi bi-people-fill"></i> Our customers</h2>
+            <div class="flex flex-wrap justify-center gap-10 py-10 px-5">
+                <div class="flex flex-col items-center gap-5">
+                    <i class="bi bi-person-fill text-6xl"></i>
+                    <div class="text">
+                        <h3 class="text-center mb-2">Lorem ipsum.</h3>
+                        <p class="text-center text-gray max-w-96">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis asperiores alias dicta dignissimos. Atque, necessitatibus!</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center gap-5">
+                    <i class="bi bi-person-fill-exclamation text-6xl"></i>
+                    <div class="text">
+                        <h3 class="text-center mb-2">Lorem ipsum.</h3>
+                        <p class="text-center text-gray max-w-96">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam accusamus delectus nulla eius quae excepturi architecto quis vitae aut debitis voluptas accusantium veritatis, fuga consequatur, odio nostrum recusandae tenetur qui.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center gap-5">
+                    <i class="bi bi-person-fill-check text-6xl"></i>
+                    <div class="text">
+                        <h3 class="text-center mb-2">Lorem ipsum.</h3>
+                        <p class="text-center text-gray max-w-96">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium ipsam commodi, neque facilis voluptas possimus sit animi eligendi officia. Inventore sapiente provident optio numquam ea.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center gap-5">
+                    <i class="bi bi-person-fill text-6xl"></i>
+                    <div class="text">
+                        <h3 class="text-center mb-2">Lorem ipsum.</h3>
+                        <p class="text-center text-gray max-w-96">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus neque voluptate ipsa vitae dignissimos blanditiis molestiae nesciunt.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center gap-5">
+                    <i class="bi bi-person-fill text-6xl"></i>
+                    <div class="text">
+                        <h3 class="text-center mb-2">Lorem ipsum.</h3>
+                        <p class="text-center text-gray max-w-96">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut hic assumenda tempore fugiat? Esse incidunt tempore quaerat aspernatur. Quaerat voluptatibus, aliquam distinctio corrupti cum ullam totam! Quidem, atque deserunt? Vitae, dicta dolor?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="FAQs" class="container p-5 md:px-14 md:py-1 flex flex-col items-center gap-5">
+            <h2 class="font-Amiri px-2 self-center inline-block text-4xl text-center hover:text-chocolate hover:border-x-2 hover:border-x-chocolate"><i class="bi bi-question-circle-fill"></i> FAQs</h2>
+            <div class="accordion flex flex-col py-10 w-full">
+                <button class="barButton p-5 mt-5 mb-2 font-bold text-3xl bg-bgColor text-start flex justify-between items-center rounded-md">Lorem ipsum dolor sit amet? <i class="bi bi-arrows-expand text-xl ml-5"></i></button>
+                <div class="bar mb-5 p-5">
+                    <p class="text-gray">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati dolores laborum temporibus ipsum similique necessitatibus!</p>
+                </div>
+
+                <button class="barButton p-5 mt-5 mb-2 font-bold text-3xl bg-bgColor text-start flex justify-between items-center rounded-md">Lorem ipsum dolor sit amet? <i class="bi bi-arrows-expand text-xl ml-5"></i></button>
+                <div class="bar mb-5 p-5">
+                    <p class="text-gray">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati dolores laborum temporibus ipsum similique necessitatibus!</p>
+                </div>
+
+                <button class="barButton p-5 mt-5 mb-2 font-bold text-3xl bg-bgColor text-start flex justify-between items-center rounded-md">Lorem ipsum dolor sit amet? <i class="bi bi-arrows-expand text-xl ml-5"></i></button>
+                <div class="bar mb-5 p-5">
+                    <p class="text-gray">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati dolores laborum temporibus ipsum similique necessitatibus!</p>
+                </div>
+            </div>
+        </section>
+        <section id="gallery" class="container p-5 md:px-14 md:py-1 flex flex-col items-center gap-5">
+            <h2 class="font-Amiri px-2 self-center inline-block text-4xl text-center hover:text-chocolate hover:border-x-2 hover:border-x-chocolate"><i class="bi bi-images"></i> Gallery</h2>
+            <div class="galleryBox flex flex-wrap justify-center py-10 gap-5 items-start [&>img]:rounded-lg [&>img]:max-w-60 [&>img]:md:max-w-96">
+                <img src="images/chocolate_bar_1.jpg" loading="lazy" alt="chocolate bar 1">
+                <img src="images/bee_1.jpg" loading="lazy" alt="chocolate bar 2">
+                <img src="images/chocolate_bar_3.jpg" loading="lazy" alt="chocolate bar 3">
+                <img src="images/chocolate_bar_2.jpg" loading="lazy" alt="chocolate bar 2">
+                <img src="images/bees_1.jpg" loading="lazy" alt="chocolate bar 1">
+            </div>
+        </section>
+        <section id="contactUs" class="container p-5 md:px-14 md:py-1 flex flex-col items-center gap-5">
+            <h2 class="font-Amiri px-2 self-center inline-block text-4xl text-center hover:text-chocolate hover:border-x-2 hover:border-x-chocolate"><i class="bi bi-telephone-fill"></i> Contact us</h2>
+            <form class="w-full py-10 flex flex-col gap-4" action="#">
+                <input class="px-5 py-2 focus:outline-none border border-[transparent] rounded focus:border-chocolate transition-all" type="text" name="firstname" placeholder="First name">
+                <input class="px-5 py-2 focus:outline-none border border-[transparent] rounded focus:border-chocolate transition-all" type="text" name="lastname" placeholder="Last name">
+                <input class="px-5 py-2 focus:outline-none border border-[transparent] rounded focus:border-chocolate transition-all" type="number" name="phonenumber" placeholder="Phone number">
+                <input class="px-5 py-2 focus:outline-none border border-[transparent] rounded focus:border-chocolate transition-all" type="text" name="title" placeholder="Title">
+                <input class="px-5 py-2 focus:outline-none border border-[transparent] rounded focus:border-chocolate transition-all" type="text" name="content" placeholder="content...">
+                <input class="px-5 py-2 focus:outline-none border border-[transparent] rounded bg-chocolate text-white hover:border-chocolate hover:bg-[transparent] hover:text-black transition-all cursor-pointer" type="button" value="submit">
+            </form>
+        </section>
+    </main>
+    <footer class="flex justify-center">
+        <div class="container relative p-5 md:px-14 pt-2 flex justify-between gap-2 flex-wrap">
+            <p class="font-Amiri inline-block text-chocolate">CHOCO<span class="text-yellow">B</span>EE</p>
+            <p>Made by <a class="text-chocolate underline" href="https://www.frontendmentor.io/profile/AbdelrahmanShaalan">Abdelrahman Shaalan</a></p>
+        </div>
+    </footer>
+</body>
+</html>
