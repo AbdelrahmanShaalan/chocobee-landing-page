@@ -22,14 +22,14 @@
     <header class="flex justify-center">
         <div class="container relative p-5 md:px-14 pt-2 flex justify-between">
             <h1 class="font-Amiri inline-block text-chocolate">CHOCO<span class="text-yellow">B</span>EE</h1>
-            <button id="openIcon" aria-label="open mobile nav button" class="md:hidden"><i class="bi bi-list text-xl"></i></button>
+            <button id="openIcon" aria-label="open mobile nav button" class="md:hidden"><i class="bi bi-list text-5xl relative -z-10"></i></button>
             <ul id="menu" class="absolute right-10 top-12 bg-white p-5 rounded-md shadow-xl flex-col gap-3">
                 <button id="closeIcon" class="self-start"><i class="bi bi-x-lg"></i></button>
-                <li class="py-2"><a href="#ourExperience" class="hover:text-chocolate relative after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-1 after:bg-chocolate after:transition-[width] after:duration-500 hover:after:w-full"><i class="bi bi-stars"></i> Our experience</a></li>
-                <li class="py-2"><a href="#ourCustomers" class="hover:text-chocolate relative after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-1 after:bg-chocolate after:transition-[width] after:duration-500 hover:after:w-full"><i class="bi bi-people-fill"></i> Our customers</a></li>
-                <li class="py-2"><a href="#FAQs" class="hover:text-chocolate relative after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-1 after:bg-chocolate after:transition-[width] after:duration-500 hover:after:w-full"><i class="bi bi-question-circle-fill"></i> FAQs</a></li>
-                <li class="py-2"><a href="#gallery" class="hover:text-chocolate relative after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-1 after:bg-chocolate after:transition-[width] after:duration-500 hover:after:w-full"><i class="bi bi-images"></i> Gallery</a></li>
-                <li class="py-2"><a href="#contactUs" class="hover:text-chocolate relative after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-1 after:bg-chocolate after:transition-[width] after:duration-500 hover:after:w-full"><i class="bi bi-telephone-fill"></i> Contact us</a></li>
+                <li class="py-2"><a href="#ourExperience" class="mobileAnchor hover:text-chocolate"><i class="bi bi-stars"></i> Our experience</a></li>
+                <li class="py-2"><a href="#ourCustomers" class="mobileAnchor hover:text-chocolate"><i class="bi bi-people-fill"></i> Our customers</a></li>
+                <li class="py-2"><a href="#FAQs" class="mobileAnchor hover:text-chocolate"><i class="bi bi-question-circle-fill"></i> FAQs</a></li>
+                <li class="py-2"><a href="#gallery" class="mobileAnchor hover:text-chocolate"><i class="bi bi-images"></i> Gallery</a></li>
+                <li class="py-2"><a href="#contactUs" class="mobileAnchor hover:text-chocolate"><i class="bi bi-telephone-fill"></i> Contact us</a></li>
             </ul>
         </div>
     </header>
@@ -37,20 +37,22 @@
         <div class="container p-5 md:px-14 md:py-1">
             <ul class="flex justify-between">
                 <li class="py-2"><a href="#ourExperience" class="hover:text-chocolate relative after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-1 after:bg-chocolate after:transition-[width] after:duration-500 hover:after:w-full"><i class="bi bi-stars"></i> Our experience</a></li>
-                <li class="py-2"><a href="#ourCustomers" class="hover:text-chocolate relative after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-1 after:bg-chocolate after:transition-[width] after:duration-500 hover:after:w-full"><i class="bi bi-people-fill"></i> Our customers</a></li>
-                <li class="py-2"><a href="#FAQs" class="hover:text-chocolate relative after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-1 after:bg-chocolate after:transition-[width] after:duration-500 hover:after:w-full"><i class="bi bi-question-circle-fill"></i> FAQs</a></li>
-                <li class="py-2"><a href="#gallery" class="hover:text-chocolate relative after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-1 after:bg-chocolate after:transition-[width] after:duration-500 hover:after:w-full"><i class="bi bi-images"></i> Gallery</a></li>
+                <div class="flex gap-10 lg:gap-20">
+                    <li class="py-2"><a href="#ourCustomers" class="hover:text-chocolate relative after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-1 after:bg-chocolate after:transition-[width] after:duration-500 hover:after:w-full"><i class="bi bi-people-fill"></i> Our customers</a></li>
+                    <li class="py-2"><a href="#FAQs" class="hover:text-chocolate relative after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-1 after:bg-chocolate after:transition-[width] after:duration-500 hover:after:w-full"><i class="bi bi-question-circle-fill"></i> FAQs</a></li>
+                    <li class="py-2"><a href="#gallery" class="hover:text-chocolate relative after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-1 after:bg-chocolate after:transition-[width] after:duration-500 hover:after:w-full"><i class="bi bi-images"></i> Gallery</a></li>
+                </div>
                 <li class="py-2"><a href="#contactUs" class="hover:text-chocolate relative after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-1 after:bg-chocolate after:transition-[width] after:duration-500 hover:after:w-full"><i class="bi bi-telephone-fill"></i> Contact us</a></li>
             </ul>
         </div>
     </nav>
-    <main class="flex flex-col justify-center items-center flex-grow gap-16">
+    <main class="flex flex-col justify-center items-center flex-grow gap-28">
         <section class="container mt-16 p-5 md:px-14 md:py-1 flex-grow flex flex-col md:flex-row gap-5">
             <div class="flex-grow flex-1 flex items-center">
                 <div class="flex flex-col items-center md:block">
                     <h1 class="font-Amiri text-5xl text-center md:text-start mb-2">Lorem ipsum dolor sit <span class="text-chocolate">amet?</span></h1>
                     <p class="max-w-96 text-gray font-Cairo text-center md:text-start mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rerum saepe est eveniet dolorum magni labore doloremque eligendi nesciunt, id cumque pariatur cum quibusdam velit.</p>
-                    <ul class="flex justify-evenly md:justify-start gap-5 text-2xl">
+                    <ul class="flex justify-evenly md:justify-start gap-5 text-2xl [&>li]:cursor-pointer">
                         <li><i class="bi bi-facebook hover:text-chocolate"></i></li>
                         <li><i class="bi bi-instagram hover:text-chocolate"></i></li>
                         <li><i class="bi bi-whatsapp hover:text-chocolate"></i></li>
@@ -59,7 +61,7 @@
                 </div>
             </div>
             <div class="flex-grow flex-1 flex justify-center md:justify-end items-center">
-                <div class="image-box w-80">
+                <div class="image-box flex-grow">
                     <img class="rounded-lg" src="images/chocolate_1.jpg" alt="chocolate 1">
                 </div>
             </div>
@@ -143,17 +145,17 @@
         <section id="FAQs" class="container p-5 md:px-14 md:py-1 flex flex-col items-center gap-5">
             <h2 class="font-Amiri px-2 self-center inline-block text-4xl text-center hover:text-chocolate hover:border-x-2 hover:border-x-chocolate"><i class="bi bi-question-circle-fill"></i> FAQs</h2>
             <div class="accordion flex flex-col py-10 w-full">
-                <button class="barButton p-5 mt-5 mb-2 font-bold text-3xl bg-bgColor text-start flex justify-between items-center rounded-md">Lorem ipsum dolor sit amet? <i class="bi bi-arrows-expand text-xl ml-5"></i></button>
+                <button class="barButton p-5 mt-5 mb-2 font-bold text-3xl bg-bgColor text-start flex justify-between items-center rounded-md">Lorem ipsum dolor sit amet? <i class="bi bi-arrow-bar-down text-xl ml-5"></i></button>
                 <div class="bar mb-5 p-5">
                     <p class="text-gray">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati dolores laborum temporibus ipsum similique necessitatibus!</p>
                 </div>
 
-                <button class="barButton p-5 mt-5 mb-2 font-bold text-3xl bg-bgColor text-start flex justify-between items-center rounded-md">Lorem ipsum dolor sit amet? <i class="bi bi-arrows-expand text-xl ml-5"></i></button>
+                <button class="barButton p-5 mt-5 mb-2 font-bold text-3xl bg-bgColor text-start flex justify-between items-center rounded-md">Lorem ipsum dolor sit amet? <i class="bi bi-arrow-bar-down text-xl ml-5"></i></button>
                 <div class="bar mb-5 p-5">
                     <p class="text-gray">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati dolores laborum temporibus ipsum similique necessitatibus!</p>
                 </div>
 
-                <button class="barButton p-5 mt-5 mb-2 font-bold text-3xl bg-bgColor text-start flex justify-between items-center rounded-md">Lorem ipsum dolor sit amet? <i class="bi bi-arrows-expand text-xl ml-5"></i></button>
+                <button class="barButton p-5 mt-5 mb-2 font-bold text-3xl bg-bgColor text-start flex justify-between items-center rounded-md">Lorem ipsum dolor sit amet? <i class="bi bi-arrow-bar-down text-xl ml-5"></i></button>
                 <div class="bar mb-5 p-5">
                     <p class="text-gray">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati dolores laborum temporibus ipsum similique necessitatibus!</p>
                 </div>
